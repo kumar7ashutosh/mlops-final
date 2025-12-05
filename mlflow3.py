@@ -101,5 +101,4 @@ with mlflow.start_run(run_name='best model register') as reg:
 
     mlflow.log_artifact("Confusion-matrix-model.png")
     mlflow.log_artifact(__file__)
-    mlflow.sklearn.log_model(best_model,artifact_path='best_model',registered_model_name='best model registry')
-    
+    mlflow.sklearn.log_model(best_model,artifact_path='best_model',registered_model_name='best model registry')    
